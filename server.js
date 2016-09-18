@@ -26,13 +26,15 @@ var articleOne = {
 
 function Createtemplate(data) {
     var title=data.title;
-    var heading=data.heading;
+    var Heading=data.Heading;
     var date=data.date;
     var content=data.content;
 var Htmltemplate =`
 <html>
     <head>
-        <title>$(title) </title>
+        <title>
+        ${title}
+        </title>
         <link href="/ui/style.css" rel="stylesheet" />
     </head>
     <body>
@@ -41,13 +43,14 @@ var Htmltemplate =`
             <a href='/'>Home</a>
         </div>
         <hr/>
-        <h2>$(Heading)
+        <h2>
+        ${Heading}
         </h2>
         <div>
-            $(date) 
+            ${date}
         </div>
         <div>
-            $(content)
+            ${content}
             </div>
             
         </div>
