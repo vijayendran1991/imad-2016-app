@@ -32,7 +32,7 @@ function Createtemplate(data) {
 var Htmltemplate =`
 <html>
     <head>
-        <title>$(Title) </title>
+        <title>$(title) </title>
         <link href="/ui/style.css" rel="stylesheet" />
     </head>
     <body>
@@ -41,13 +41,13 @@ var Htmltemplate =`
             <a href='/'>Home</a>
         </div>
         <hr/>
-        <h2>$(heading)
+        <h2>$(Heading)
         </h2>
         <div>
-            $(Date) 
+            $(date) 
         </div>
         <div>
-            $(Content)
+            $(content)
             </div>
             
         </div>
